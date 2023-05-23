@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,700&family=Open+Sans:wght@400;500;600&family=Poppins:wght@200;300;400;500;600;700;800;900&family=Reem+Kufi:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary--color: #0891b2;
+  --primary-color-dark: #0e7490;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #f334f6;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", sans-serif;
+}
+.container {
+  display: flex;
+  min-height: 100vh;
+  min-height: 100svh;
+}
+.container__left {
+  flex: 1;
+  background: url(./pexels-trip-in-mexico-16754837.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image__content {
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 1rem;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.image__content .title {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+.image__content .subtitle {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.image__content .signin__btn {
+  width: 100%;
+  max-width: 125px;
+  padding: 0.75rem;
+  text-transform: uppercase;
+  background: transparent;
+  outline: none;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.image__content .signin__btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.container__right {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+.signup__form {
+  width: 100%;
+  max-width: 450px;
+  padding: 1rem;
+  margin: auto;
+  display: grid;
+  gap: 1.5rem;
+}
+.form__row {
+  display: flex;
+  gap: 1rem;
+}
+.form__group {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+.signup__form label {
+  font-size: 0.8rem;
+}
+.signup__form input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--text-light);
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1rem;
+  background: transparent;
+}
+.signup__form .submit__btn {
+  width: 100%;
+  padding: 1rem;
+  text-transform: uppercase;
+  background-color: var(--primary--color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+.signup__form .submit__btn:hover {
+  background-color: var(--primary-color-dark);
+}
+@media screen and (width < 750px) {
+  .container__left {
+    display: none;
+  }
+}
